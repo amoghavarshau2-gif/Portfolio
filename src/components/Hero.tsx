@@ -110,8 +110,11 @@ export default function Hero() {
           >
             {/* Generated Portrait Image */}
             <div className="w-full h-full bg-secondary flex items-center justify-center relative">
-               <div className="absolute inset-0 opacity-80 mix-blend-overlay bg-[url('/Amogh1.jpeg')] bg-cover bg-center"></div>
-               <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
+              <div
+                className="absolute inset-0 opacity-80 mix-blend-overlay bg-cover bg-center"
+                style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Amogh1.jpeg)` }}
+              ></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
             </div>
             
             <div className="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border border-white/5 translate-z-12">

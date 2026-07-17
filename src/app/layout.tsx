@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/Amogh1.jpeg",
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({

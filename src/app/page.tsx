@@ -27,12 +27,12 @@ export default function Home() {
     if (loading) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflow = "auto";
     }
   }, [loading]);
 
   return (
-    <ReactLenis root options={{ smoothWheel: true, syncTouch: true }}>
+    <ReactLenis root options={{ smooth: true, smoothTouch: true, smoothWheel: true, syncTouch: true, lerp: 0.08 }}>
       <main className="min-h-screen relative selection:bg-accent-1/30 selection:text-white">
         
         {loading && <Loader onComplete={() => setLoading(false)} />}

@@ -39,7 +39,10 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-2xl glass-card overflow-hidden p-2">
               <div className="w-full h-full rounded-xl bg-secondary relative overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/Amogh2.jpeg')] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700 opacity-80"></div>
+                <div
+                  className="absolute inset-0 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700 opacity-80"
+                  style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Amogh2.jpeg)` }}
+                ></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent mix-blend-multiply"></div>
               </div>
             </div>
