@@ -24,6 +24,13 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Improve touch scrolling behavior on mobile and foldables */
+html, body, #__next {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: auto;
+  touch-action: pan-y;
+}
+
 /* Custom Scrollbar for non-lenis */
 ::-webkit-scrollbar {
   width: 8px;

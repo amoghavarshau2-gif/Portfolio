@@ -81,18 +81,18 @@ export default function Gallery() {
               ✕
             </button>
             
-            <motion.div
+              <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative max-w-7xl max-h-[90vh] w-full p-4 flex items-center justify-center"
+              className="relative max-w-5xl w-full p-4 flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <img 
                 src={selectedImage} 
                 alt="Selected" 
-                className="max-w-full max-h-[85vh] object-contain rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.5)]" 
+                className="max-w-full w-[95%] sm:w-auto max-h-[80vh] object-contain rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.5)]" 
               />
             </motion.div>
           </motion.div>

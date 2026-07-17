@@ -105,8 +105,8 @@ export default function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-accent-1/20 to-accent-2/20 rounded-2xl blur-3xl group-hover:blur-xl transition-all duration-700"></div>
           <motion.div 
             whileHover={{ rotateY: 10, rotateX: -10, scale: 1.02 }}
-            className="relative h-[600px] w-full rounded-2xl glass-card overflow-hidden border border-white/10 group-hover:border-accent-1/50 transition-colors duration-500"
-            style={{ transformStyle: "preserve-3d" }}
+            className="relative w-full rounded-2xl glass-card overflow-hidden border border-white/10 group-hover:border-accent-1/50 transition-colors duration-500"
+            style={{ transformStyle: "preserve-3d", minHeight: '50vh' }}
           >
             {/* Generated Portrait Image */}
             <div className="w-full h-full bg-secondary flex items-center justify-center relative">
