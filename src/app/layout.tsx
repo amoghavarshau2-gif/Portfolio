@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Portfolio of Amoghavarsha, showcasing work in UI/UX Design, Professional Photography, and Financial Consulting.",
   keywords: ["UI/UX Designer", "Graphic Designer", "Professional Photographer", "Accountant", "Finance Professional", "Portfolio", "Amoghavarsha"],
   icons: {
-    icon: "/Amogh1.jpeg",
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Amogh1.jpeg`,
   },
   viewport: {
     width: 'device-width',
